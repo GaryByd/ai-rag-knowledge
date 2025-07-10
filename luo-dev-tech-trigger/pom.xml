@@ -9,7 +9,7 @@
         <version>1.0</version>
     </parent>
 
-    <artifactId>xfg-dev-tech-trigger</artifactId>
+    <artifactId>luo-dev-tech-trigger</artifactId>
 
     <dependencies>
         <dependency>
