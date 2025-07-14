@@ -1,0 +1,42 @@
+server:
+  port: 8090
+
+spring:
+  ai:
+    ollama:
+      base-url: http://81.71.3.20:11434
+      embedding:
+        options:
+          num-batch: 512
+        model: nomic-embed-text
+    openai:
+      base-url: https://api.ppinfra.com/v3/openai
+      api-key: sk_wZeQVQK1AKmguPn2GWUkj51lcBYSIz6DbZUWMa_tRYU
+      embedding-model: deepseek/deepseek-r1-distill-llama-8b
+    rag:
+      embed: nomic-embed-text #nomic-embed-text、text-embedding-ada-002
+  datasource:
+    url: jdbc:postgresql://localhost:15432/
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+
+# Redis
+redis:
+  sdk:
+    config:
+      host: 81.71.3.20
+      port: 16379
+      pool-size: 10
+      min-idle-size: 5
+      idle-timeout: 30000
+      connect-timeout: 5000
+      retry-attempts: 3
+      retry-interval: 1000
+      ping-interval: 60000
+      keep-alive: true
+
+logging:
+  level:
+    root: info
+  config: classpath:logback-spring.xml
