@@ -1,0 +1,1597 @@
+25-07-14.21:45:33.087 [main            ] INFO  Application            - Starting Application using Java 17.0.11 with PID 33776 (A:\Desktop\repos_git\ai-rag-knowledge\luo-dev-tech-app\target\classes started by 22407 in A:\Desktop\repos_git\ai-rag-knowledge)
+25-07-14.21:45:33.089 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+25-07-14.21:45:34.130 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-07-14.21:45:34.133 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-07-14.21:45:34.166 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+25-07-14.21:45:35.140 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port 8090 (http)
+25-07-14.21:45:35.150 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+25-07-14.21:45:35.152 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-07-14.21:45:35.152 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/10.1.19]
+25-07-14.21:45:35.279 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-07-14.21:45:35.279 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1913 ms
+25-07-14.21:45:35.689 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'openAiApi' defined in class path resource [com/luojiawei/tech/config/OllamaConfig.class]: Unexpected exception during bean creation
+25-07-14.21:45:35.693 [main            ] INFO  StandardService        - Stopping service [Tomcat]
+25-07-14.21:45:35.723 [main            ] INFO  ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+25-07-14.21:45:35.755 [main            ] ERROR SpringApplication      - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'openAiApi' defined in class path resource [com/luojiawei/tech/config/OllamaConfig.class]: Unexpected exception during bean creation
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:535)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:959)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at com.luojiawei.tech.Application.main(Application.java:12)
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'spring.ai.openai.base-url' in value "${spring.ai.openai.base-url}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:180)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:239)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:200)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:921)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1374)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:907)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:785)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:542)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1335)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1165)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	... 14 common frames omitted
+25-07-14.21:47:58.334 [main            ] INFO  Application            - Starting Application using Java 17.0.11 with PID 24832 (A:\Desktop\repos_git\ai-rag-knowledge\luo-dev-tech-app\target\classes started by 22407 in A:\Desktop\repos_git\ai-rag-knowledge)
+25-07-14.21:47:58.337 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+25-07-14.21:47:59.136 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-07-14.21:47:59.138 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-07-14.21:47:59.161 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+25-07-14.21:47:59.835 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port 8090 (http)
+25-07-14.21:47:59.852 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+25-07-14.21:47:59.854 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-07-14.21:47:59.854 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/10.1.19]
+25-07-14.21:47:59.978 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-07-14.21:47:59.978 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1412 ms
+25-07-14.21:48:00.238 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'openAiApi' defined in class path resource [com/luojiawei/tech/config/OllamaConfig.class]: Unexpected exception during bean creation
+25-07-14.21:48:00.241 [main            ] INFO  StandardService        - Stopping service [Tomcat]
+25-07-14.21:48:00.254 [main            ] INFO  ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+25-07-14.21:48:00.271 [main            ] ERROR SpringApplication      - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'openAiApi' defined in class path resource [com/luojiawei/tech/config/OllamaConfig.class]: Unexpected exception during bean creation
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:535)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:959)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at com.luojiawei.tech.Application.main(Application.java:12)
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'spring.ai.openai.base-url' in value "${spring.ai.openai.base-url}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:180)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:239)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:200)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:921)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1374)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:907)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:785)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:542)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1335)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1165)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	... 14 common frames omitted
+25-07-14.21:48:23.309 [main            ] INFO  Application            - Starting Application using Java 17.0.11 with PID 3260 (A:\Desktop\repos_git\ai-rag-knowledge\luo-dev-tech-app\target\classes started by 22407 in A:\Desktop\repos_git\ai-rag-knowledge)
+25-07-14.21:48:23.311 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+25-07-14.21:48:24.200 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-07-14.21:48:24.202 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-07-14.21:48:24.234 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
+25-07-14.21:48:25.205 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port 8090 (http)
+25-07-14.21:48:25.213 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+25-07-14.21:48:25.215 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-07-14.21:48:25.215 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/10.1.19]
+25-07-14.21:48:25.348 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-07-14.21:48:25.349 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1815 ms
+25-07-14.21:48:25.654 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'openAiApi' defined in class path resource [com/luojiawei/tech/config/OllamaConfig.class]: Unexpected exception during bean creation
+25-07-14.21:48:25.656 [main            ] INFO  StandardService        - Stopping service [Tomcat]
+25-07-14.21:48:25.672 [main            ] INFO  ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+25-07-14.21:48:25.694 [main            ] ERROR SpringApplication      - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'openAiApi' defined in class path resource [com/luojiawei/tech/config/OllamaConfig.class]: Unexpected exception during bean creation
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:535)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:959)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at com.luojiawei.tech.Application.main(Application.java:12)
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'spring.ai.openai.base-url' in value "${spring.ai.openai.base-url}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:180)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:239)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:200)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:921)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1374)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:907)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:785)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:542)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1335)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1165)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	... 14 common frames omitted
+25-07-14.21:49:56.118 [main            ] INFO  Application            - Starting Application using Java 17.0.11 with PID 28484 (A:\Desktop\repos_git\ai-rag-knowledge\luo-dev-tech-app\target\classes started by 22407 in A:\Desktop\repos_git\ai-rag-knowledge)
+25-07-14.21:49:56.120 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+25-07-14.21:49:56.986 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-07-14.21:49:56.989 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-07-14.21:49:57.017 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+25-07-14.21:49:57.747 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port 8090 (http)
+25-07-14.21:49:57.755 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+25-07-14.21:49:57.756 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-07-14.21:49:57.757 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/10.1.19]
+25-07-14.21:49:57.882 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-07-14.21:49:57.882 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1549 ms
+25-07-14.21:49:58.311 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'vectorStore' defined in class path resource [com/luojiawei/tech/config/OllamaConfig.class]: Unexpected exception during bean creation
+25-07-14.21:49:58.315 [main            ] INFO  StandardService        - Stopping service [Tomcat]
+25-07-14.21:49:58.331 [main            ] INFO  ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+25-07-14.21:49:58.348 [main            ] ERROR SpringApplication      - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'vectorStore' defined in class path resource [com/luojiawei/tech/config/OllamaConfig.class]: Unexpected exception during bean creation
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:535)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:959)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at com.luojiawei.tech.Application.main(Application.java:12)
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'spring.ai.rag.embed' in value "${spring.ai.rag.embed}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:180)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:239)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:200)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:921)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1374)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:907)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:785)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:542)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1335)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1165)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	... 14 common frames omitted
+25-07-14.21:50:09.120 [main            ] INFO  Application            - Starting Application using Java 17.0.11 with PID 23680 (A:\Desktop\repos_git\ai-rag-knowledge\luo-dev-tech-app\target\classes started by 22407 in A:\Desktop\repos_git\ai-rag-knowledge)
+25-07-14.21:50:09.122 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+25-07-14.21:50:09.929 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-07-14.21:50:09.932 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-07-14.21:50:09.961 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+25-07-14.21:50:10.706 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port 8090 (http)
+25-07-14.21:50:10.715 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+25-07-14.21:50:10.717 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-07-14.21:50:10.717 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/10.1.19]
+25-07-14.21:50:10.830 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-07-14.21:50:10.830 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1506 ms
+25-07-14.21:50:11.258 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'vectorStore' defined in class path resource [com/luojiawei/tech/config/OllamaConfig.class]: Unexpected exception during bean creation
+25-07-14.21:50:11.261 [main            ] INFO  StandardService        - Stopping service [Tomcat]
+25-07-14.21:50:11.275 [main            ] INFO  ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+25-07-14.21:50:11.293 [main            ] ERROR SpringApplication      - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'vectorStore' defined in class path resource [com/luojiawei/tech/config/OllamaConfig.class]: Unexpected exception during bean creation
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:535)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:959)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at com.luojiawei.tech.Application.main(Application.java:12)
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'spring.ai.rag.embed' in value "${spring.ai.rag.embed}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:180)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:239)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:200)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:921)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1374)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:907)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:785)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:542)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1335)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1165)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	... 14 common frames omitted
+25-07-14.21:51:08.607 [main            ] INFO  Application            - Starting Application using Java 17.0.11 with PID 38284 (A:\Desktop\repos_git\ai-rag-knowledge\luo-dev-tech-app\target\classes started by 22407 in A:\Desktop\repos_git\ai-rag-knowledge)
+25-07-14.21:51:08.609 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+25-07-14.21:51:09.495 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-07-14.21:51:09.497 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-07-14.21:51:09.525 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+25-07-14.21:51:10.238 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port 8090 (http)
+25-07-14.21:51:10.248 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+25-07-14.21:51:10.251 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-07-14.21:51:10.251 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/10.1.19]
+25-07-14.21:51:10.373 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-07-14.21:51:10.373 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1502 ms
+25-07-14.21:51:10.790 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'vectorStore' defined in class path resource [com/luojiawei/tech/config/OllamaConfig.class]: Unexpected exception during bean creation
+25-07-14.21:51:10.792 [main            ] INFO  StandardService        - Stopping service [Tomcat]
+25-07-14.21:51:10.806 [main            ] INFO  ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+25-07-14.21:51:10.823 [main            ] ERROR SpringApplication      - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'vectorStore' defined in class path resource [com/luojiawei/tech/config/OllamaConfig.class]: Unexpected exception during bean creation
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:535)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:959)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at com.luojiawei.tech.Application.main(Application.java:12)
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'spring.ai.rag.embed' in value "${spring.ai.rag.embed}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:180)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:239)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:200)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:921)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1374)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:907)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:785)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:542)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1335)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1165)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	... 14 common frames omitted
+25-07-14.21:51:46.850 [main            ] INFO  Application            - Starting Application using Java 17.0.11 with PID 34972 (A:\Desktop\repos_git\ai-rag-knowledge\luo-dev-tech-app\target\classes started by 22407 in A:\Desktop\repos_git\ai-rag-knowledge)
+25-07-14.21:51:46.851 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+25-07-14.21:51:47.659 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-07-14.21:51:47.661 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-07-14.21:51:47.689 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+25-07-14.21:51:48.366 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port 8090 (http)
+25-07-14.21:51:48.377 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+25-07-14.21:51:48.379 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-07-14.21:51:48.380 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/10.1.19]
+25-07-14.21:51:48.506 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-07-14.21:51:48.506 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1432 ms
+25-07-14.21:51:49.013 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'vectorStore' defined in class path resource [com/luojiawei/tech/config/OllamaConfig.class]: Unexpected exception during bean creation
+25-07-14.21:51:49.016 [main            ] INFO  StandardService        - Stopping service [Tomcat]
+25-07-14.21:51:49.034 [main            ] INFO  ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+25-07-14.21:51:49.051 [main            ] ERROR SpringApplication      - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'vectorStore' defined in class path resource [com/luojiawei/tech/config/OllamaConfig.class]: Unexpected exception during bean creation
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:535)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:959)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at com.luojiawei.tech.Application.main(Application.java:12)
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'spring.ai.rag.embed' in value "${spring.ai.rag.embed}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:180)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:239)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:200)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:921)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1374)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:907)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:785)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:542)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1335)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1165)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	... 14 common frames omitted
+25-07-14.21:52:02.945 [main            ] INFO  Application            - Starting Application using Java 17.0.11 with PID 18208 (A:\Desktop\repos_git\ai-rag-knowledge\luo-dev-tech-app\target\classes started by 22407 in A:\Desktop\repos_git\ai-rag-knowledge)
+25-07-14.21:52:02.948 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+25-07-14.21:52:03.990 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-07-14.21:52:03.994 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-07-14.21:52:04.026 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
+25-07-14.21:52:04.930 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port 8090 (http)
+25-07-14.21:52:04.939 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+25-07-14.21:52:04.941 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-07-14.21:52:04.941 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/10.1.19]
+25-07-14.21:52:05.058 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-07-14.21:52:05.058 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1864 ms
+25-07-14.21:52:05.574 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'vectorStore' defined in class path resource [com/luojiawei/tech/config/OllamaConfig.class]: Unexpected exception during bean creation
+25-07-14.21:52:05.576 [main            ] INFO  StandardService        - Stopping service [Tomcat]
+25-07-14.21:52:05.593 [main            ] INFO  ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+25-07-14.21:52:05.614 [main            ] ERROR SpringApplication      - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'vectorStore' defined in class path resource [com/luojiawei/tech/config/OllamaConfig.class]: Unexpected exception during bean creation
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:535)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:959)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at com.luojiawei.tech.Application.main(Application.java:12)
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'spring.ai.rag.embed' in value "${spring.ai.rag.embed}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:180)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:239)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:200)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:921)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1374)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:907)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:785)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:542)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1335)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1165)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	... 14 common frames omitted
+25-07-14.21:53:27.686 [main            ] INFO  Application            - Starting Application using Java 17.0.11 with PID 28188 (A:\Desktop\repos_git\ai-rag-knowledge\luo-dev-tech-app\target\classes started by 22407 in A:\Desktop\repos_git\ai-rag-knowledge)
+25-07-14.21:53:27.688 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+25-07-14.21:53:28.520 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-07-14.21:53:28.523 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-07-14.21:53:28.551 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+25-07-14.21:53:29.261 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port 8090 (http)
+25-07-14.21:53:29.270 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+25-07-14.21:53:29.271 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-07-14.21:53:29.271 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/10.1.19]
+25-07-14.21:53:29.384 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-07-14.21:53:29.384 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1455 ms
+25-07-14.21:53:29.847 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'vectorStore' defined in class path resource [com/luojiawei/tech/config/OllamaConfig.class]: Unexpected exception during bean creation
+25-07-14.21:53:29.850 [main            ] INFO  StandardService        - Stopping service [Tomcat]
+25-07-14.21:53:29.864 [main            ] INFO  ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+25-07-14.21:53:29.880 [main            ] ERROR SpringApplication      - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'vectorStore' defined in class path resource [com/luojiawei/tech/config/OllamaConfig.class]: Unexpected exception during bean creation
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:535)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:959)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at com.luojiawei.tech.Application.main(Application.java:12)
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'spring.ai.rag.embed' in value "${spring.ai.rag.embed}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:180)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:239)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:200)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:921)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1374)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:907)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:785)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:542)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1335)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1165)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	... 14 common frames omitted
+25-07-14.21:55:17.220 [main            ] INFO  Application            - Starting Application using Java 17.0.11 with PID 5292 (A:\Desktop\repos_git\ai-rag-knowledge\luo-dev-tech-app\target\classes started by 22407 in A:\Desktop\repos_git\ai-rag-knowledge)
+25-07-14.21:55:17.222 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+25-07-14.21:55:18.048 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-07-14.21:55:18.051 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-07-14.21:55:18.075 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+25-07-14.21:55:18.804 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port 8090 (http)
+25-07-14.21:55:18.812 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+25-07-14.21:55:18.814 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-07-14.21:55:18.814 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/10.1.19]
+25-07-14.21:55:18.936 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-07-14.21:55:18.937 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1469 ms
+25-07-14.21:55:19.384 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'pgVectorStore' defined in class path resource [com/luojiawei/tech/config/OllamaConfig.class]: Unsatisfied dependency expressed through method 'pgVectorStore' parameter 3: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Failed to determine a suitable driver class
+25-07-14.21:55:19.386 [main            ] INFO  StandardService        - Stopping service [Tomcat]
+25-07-14.21:55:19.400 [main            ] INFO  ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+25-07-14.21:55:19.417 [main            ] ERROR LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (the profiles dev are currently active).
+
+25-07-14.21:57:49.689 [main            ] INFO  Application            - Starting Application using Java 17.0.11 with PID 31140 (A:\Desktop\repos_git\ai-rag-knowledge\luo-dev-tech-app\target\classes started by 22407 in A:\Desktop\repos_git\ai-rag-knowledge)
+25-07-14.21:57:49.690 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+25-07-14.21:57:50.520 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-07-14.21:57:50.523 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-07-14.21:57:50.546 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+25-07-14.21:57:51.266 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port 8090 (http)
+25-07-14.21:57:51.274 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+25-07-14.21:57:51.275 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-07-14.21:57:51.275 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/10.1.19]
+25-07-14.21:57:51.411 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-07-14.21:57:51.412 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1498 ms
+25-07-14.21:57:51.852 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'pgVectorStore' defined in class path resource [com/luojiawei/tech/config/OllamaConfig.class]: Unsatisfied dependency expressed through method 'pgVectorStore' parameter 3: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Failed to determine a suitable driver class
+25-07-14.21:57:51.854 [main            ] INFO  StandardService        - Stopping service [Tomcat]
+25-07-14.21:57:51.868 [main            ] INFO  ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+25-07-14.21:57:51.885 [main            ] ERROR LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (the profiles dev are currently active).
+
+25-07-14.21:59:08.064 [main            ] INFO  Application            - Starting Application using Java 17.0.11 with PID 35820 (A:\Desktop\repos_git\ai-rag-knowledge\luo-dev-tech-app\target\classes started by 22407 in A:\Desktop\repos_git\ai-rag-knowledge)
+25-07-14.21:59:08.066 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+25-07-14.21:59:08.870 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-07-14.21:59:08.873 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-07-14.21:59:08.900 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+25-07-14.21:59:09.612 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port 8090 (http)
+25-07-14.21:59:09.620 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+25-07-14.21:59:09.622 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-07-14.21:59:09.622 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/10.1.19]
+25-07-14.21:59:09.744 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-07-14.21:59:09.744 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1443 ms
+25-07-14.21:59:10.193 [main            ] ERROR HikariConfig           - Failed to load driver class com.mysql.cj.jdbc.Driver from HikariConfig class classloader jdk.internal.loader.ClassLoaders$AppClassLoader@5e481248
+25-07-14.21:59:10.197 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'pgVectorStore' defined in class path resource [com/luojiawei/tech/config/OllamaConfig.class]: Unsatisfied dependency expressed through method 'pgVectorStore' parameter 3: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Failed to load driver class com.mysql.cj.jdbc.Driver in either of HikariConfig class loader or Thread context classloader
+25-07-14.21:59:10.199 [main            ] INFO  StandardService        - Stopping service [Tomcat]
+25-07-14.21:59:10.213 [main            ] INFO  ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+25-07-14.21:59:10.230 [main            ] ERROR SpringApplication      - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'pgVectorStore' defined in class path resource [com/luojiawei/tech/config/OllamaConfig.class]: Unsatisfied dependency expressed through method 'pgVectorStore' parameter 3: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Failed to load driver class com.mysql.cj.jdbc.Driver in either of HikariConfig class loader or Thread context classloader
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:798)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:542)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1335)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1165)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:959)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at com.luojiawei.tech.Application.main(Application.java:12)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Failed to load driver class com.mysql.cj.jdbc.Driver in either of HikariConfig class loader or Thread context classloader
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:798)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:542)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1335)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1165)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:907)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:785)
+	... 19 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Failed to load driver class com.mysql.cj.jdbc.Driver in either of HikariConfig class loader or Thread context classloader
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:651)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:639)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1335)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1165)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:907)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:785)
+	... 35 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Failed to load driver class com.mysql.cj.jdbc.Driver in either of HikariConfig class loader or Thread context classloader
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:177)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:647)
+	... 49 common frames omitted
+Caused by: java.lang.RuntimeException: Failed to load driver class com.mysql.cj.jdbc.Driver in either of HikariConfig class loader or Thread context classloader
+	at com.zaxxer.hikari.HikariConfig.setDriverClassName(HikariConfig.java:488)
+	at org.springframework.boot.jdbc.DataSourceBuilder$MappedDataSourceProperty.set(DataSourceBuilder.java:479)
+	at org.springframework.boot.jdbc.DataSourceBuilder$MappedDataSourceProperties.set(DataSourceBuilder.java:373)
+	at org.springframework.boot.jdbc.DataSourceBuilder.build(DataSourceBuilder.java:183)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration.createDataSource(DataSourceConfiguration.java:59)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari.dataSource(DataSourceConfiguration.java:117)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:140)
+	... 50 common frames omitted
+25-07-14.21:59:22.126 [main            ] INFO  Application            - Starting Application using Java 17.0.11 with PID 30176 (A:\Desktop\repos_git\ai-rag-knowledge\luo-dev-tech-app\target\classes started by 22407 in A:\Desktop\repos_git\ai-rag-knowledge)
+25-07-14.21:59:22.129 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+25-07-14.21:59:22.979 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-07-14.21:59:22.982 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-07-14.21:59:23.010 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+25-07-14.21:59:23.748 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port 8090 (http)
+25-07-14.21:59:23.756 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+25-07-14.21:59:23.757 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-07-14.21:59:23.757 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/10.1.19]
+25-07-14.21:59:23.875 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-07-14.21:59:23.875 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1509 ms
+25-07-14.21:59:24.353 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'pgVectorStore' defined in class path resource [com/luojiawei/tech/config/OllamaConfig.class]: Unsatisfied dependency expressed through method 'pgVectorStore' parameter 3: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Failed to determine a suitable driver class
+25-07-14.21:59:24.356 [main            ] INFO  StandardService        - Stopping service [Tomcat]
+25-07-14.21:59:24.371 [main            ] INFO  ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+25-07-14.21:59:24.389 [main            ] ERROR LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (the profiles dev are currently active).
+
+25-07-14.22:00:00.451 [main            ] INFO  Application            - Starting Application using Java 17.0.11 with PID 36200 (A:\Desktop\repos_git\ai-rag-knowledge\luo-dev-tech-app\target\classes started by 22407 in A:\Desktop\repos_git\ai-rag-knowledge)
+25-07-14.22:00:00.453 [main            ] INFO  Application            - The following 1 profile is active: "prod"
+25-07-14.22:00:01.433 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-07-14.22:00:01.436 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-07-14.22:00:01.465 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+25-07-14.22:00:02.210 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port 8090 (http)
+25-07-14.22:00:02.220 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+25-07-14.22:00:02.222 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-07-14.22:00:02.223 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/10.1.19]
+25-07-14.22:00:02.349 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-07-14.22:00:02.349 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1598 ms
+25-07-14.22:00:02.833 [main            ] INFO  HikariDataSource       - HikariCP - Starting...
+25-07-14.22:00:13.942 [main            ] ERROR HikariPool             - HikariCP - Exception during pool initialization.
+org.postgresql.util.PSQLException: The connection attempt failed.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:354)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:263)
+	at org.postgresql.Driver.makeConnection(Driver.java:443)
+	at org.postgresql.Driver.connect(Driver.java:297)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:470)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:100)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:160)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:118)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:81)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:388)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:444)
+	at org.springframework.ai.vectorstore.PgVectorStore.afterPropertiesSet(PgVectorStore.java:335)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1833)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:959)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at com.luojiawei.tech.Application.main(Application.java:12)
+Caused by: java.net.SocketTimeoutException: Connect timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:551)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at org.postgresql.core.PGStream.createSocket(PGStream.java:243)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:98)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:132)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:258)
+	... 35 common frames omitted
+25-07-14.22:00:13.950 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'pgVectorStore' defined in class path resource [com/luojiawei/tech/config/OllamaConfig.class]: Failed to obtain JDBC Connection
+25-07-14.22:00:13.955 [main            ] INFO  StandardService        - Stopping service [Tomcat]
+25-07-14.22:00:13.989 [main            ] INFO  ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+25-07-14.22:00:14.068 [main            ] ERROR SpringApplication      - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'pgVectorStore' defined in class path resource [com/luojiawei/tech/config/OllamaConfig.class]: Failed to obtain JDBC Connection
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:959)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at com.luojiawei.tech.Application.main(Application.java:12)
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:84)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:388)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:444)
+	at org.springframework.ai.vectorstore.PgVectorStore.afterPropertiesSet(PgVectorStore.java:335)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1833)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	... 16 common frames omitted
+Caused by: org.postgresql.util.PSQLException: The connection attempt failed.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:354)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:263)
+	at org.postgresql.Driver.makeConnection(Driver.java:443)
+	at org.postgresql.Driver.connect(Driver.java:297)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:470)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:100)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:160)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:118)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:81)
+	... 21 common frames omitted
+Caused by: java.net.SocketTimeoutException: Connect timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:551)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at org.postgresql.core.PGStream.createSocket(PGStream.java:243)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:98)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:132)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:258)
+	... 35 common frames omitted
+25-07-14.22:02:30.815 [main            ] INFO  Application            - Starting Application using Java 17.0.11 with PID 17120 (A:\Desktop\repos_git\ai-rag-knowledge\luo-dev-tech-app\target\classes started by 22407 in A:\Desktop\repos_git\ai-rag-knowledge)
+25-07-14.22:02:30.817 [main            ] INFO  Application            - The following 1 profile is active: "prod"
+25-07-14.22:02:31.661 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-07-14.22:02:31.663 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-07-14.22:02:31.689 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+25-07-14.22:02:32.430 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port 8090 (http)
+25-07-14.22:02:32.441 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+25-07-14.22:02:32.443 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-07-14.22:02:32.443 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/10.1.19]
+25-07-14.22:02:32.560 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-07-14.22:02:32.560 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1499 ms
+25-07-14.22:02:33.042 [main            ] INFO  HikariDataSource       - HikariCP - Starting...
+25-07-14.22:02:44.083 [main            ] ERROR HikariPool             - HikariCP - Exception during pool initialization.
+org.postgresql.util.PSQLException: The connection attempt failed.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:354)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:263)
+	at org.postgresql.Driver.makeConnection(Driver.java:443)
+	at org.postgresql.Driver.connect(Driver.java:297)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:470)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:100)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:160)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:118)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:81)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:388)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:444)
+	at org.springframework.ai.vectorstore.PgVectorStore.afterPropertiesSet(PgVectorStore.java:335)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1833)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:959)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at com.luojiawei.tech.Application.main(Application.java:12)
+Caused by: java.net.SocketTimeoutException: Connect timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:551)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at org.postgresql.core.PGStream.createSocket(PGStream.java:243)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:98)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:132)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:258)
+	... 35 common frames omitted
+25-07-14.22:02:44.089 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'pgVectorStore' defined in class path resource [com/luojiawei/tech/config/OllamaConfig.class]: Failed to obtain JDBC Connection
+25-07-14.22:02:44.095 [main            ] INFO  StandardService        - Stopping service [Tomcat]
+25-07-14.22:02:44.110 [main            ] INFO  ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+25-07-14.22:02:44.130 [main            ] ERROR SpringApplication      - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'pgVectorStore' defined in class path resource [com/luojiawei/tech/config/OllamaConfig.class]: Failed to obtain JDBC Connection
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:959)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at com.luojiawei.tech.Application.main(Application.java:12)
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:84)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:388)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:444)
+	at org.springframework.ai.vectorstore.PgVectorStore.afterPropertiesSet(PgVectorStore.java:335)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1833)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	... 16 common frames omitted
+Caused by: org.postgresql.util.PSQLException: The connection attempt failed.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:354)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:263)
+	at org.postgresql.Driver.makeConnection(Driver.java:443)
+	at org.postgresql.Driver.connect(Driver.java:297)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:470)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:100)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:160)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:118)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:81)
+	... 21 common frames omitted
+Caused by: java.net.SocketTimeoutException: Connect timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:551)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at org.postgresql.core.PGStream.createSocket(PGStream.java:243)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:98)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:132)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:258)
+	... 35 common frames omitted
+25-07-14.22:03:34.674 [main            ] INFO  Application            - Starting Application using Java 17.0.11 with PID 18496 (A:\Desktop\repos_git\ai-rag-knowledge\luo-dev-tech-app\target\classes started by 22407 in A:\Desktop\repos_git\ai-rag-knowledge)
+25-07-14.22:03:34.677 [main            ] INFO  Application            - The following 1 profile is active: "prod"
+25-07-14.22:03:35.565 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-07-14.22:03:35.568 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-07-14.22:03:35.598 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+25-07-14.22:03:36.374 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port 8090 (http)
+25-07-14.22:03:36.385 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+25-07-14.22:03:36.387 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-07-14.22:03:36.387 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/10.1.19]
+25-07-14.22:03:36.521 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-07-14.22:03:36.521 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1610 ms
+25-07-14.22:03:37.072 [main            ] INFO  HikariDataSource       - HikariCP - Starting...
+25-07-14.22:03:48.127 [main            ] ERROR HikariPool             - HikariCP - Exception during pool initialization.
+org.postgresql.util.PSQLException: The connection attempt failed.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:354)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:263)
+	at org.postgresql.Driver.makeConnection(Driver.java:443)
+	at org.postgresql.Driver.connect(Driver.java:297)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:470)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:100)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:160)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:118)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:81)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:388)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:444)
+	at org.springframework.ai.vectorstore.PgVectorStore.afterPropertiesSet(PgVectorStore.java:335)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1833)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:959)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at com.luojiawei.tech.Application.main(Application.java:12)
+Caused by: java.net.SocketTimeoutException: Connect timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:551)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at org.postgresql.core.PGStream.createSocket(PGStream.java:243)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:98)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:132)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:258)
+	... 35 common frames omitted
+25-07-14.22:03:48.132 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'pgVectorStore' defined in class path resource [com/luojiawei/tech/config/OllamaConfig.class]: Failed to obtain JDBC Connection
+25-07-14.22:03:48.136 [main            ] INFO  StandardService        - Stopping service [Tomcat]
+25-07-14.22:03:48.147 [main            ] INFO  ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+25-07-14.22:03:48.165 [main            ] ERROR SpringApplication      - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'pgVectorStore' defined in class path resource [com/luojiawei/tech/config/OllamaConfig.class]: Failed to obtain JDBC Connection
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:959)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at com.luojiawei.tech.Application.main(Application.java:12)
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:84)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:388)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:444)
+	at org.springframework.ai.vectorstore.PgVectorStore.afterPropertiesSet(PgVectorStore.java:335)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1833)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	... 16 common frames omitted
+Caused by: org.postgresql.util.PSQLException: The connection attempt failed.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:354)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:263)
+	at org.postgresql.Driver.makeConnection(Driver.java:443)
+	at org.postgresql.Driver.connect(Driver.java:297)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:470)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:100)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:160)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:118)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:81)
+	... 21 common frames omitted
+Caused by: java.net.SocketTimeoutException: Connect timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:551)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at org.postgresql.core.PGStream.createSocket(PGStream.java:243)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:98)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:132)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:258)
+	... 35 common frames omitted
+25-07-14.22:07:26.757 [main            ] INFO  Application            - Starting Application using Java 17.0.11 with PID 37832 (A:\Desktop\repos_git\ai-rag-knowledge\luo-dev-tech-app\target\classes started by 22407 in A:\Desktop\repos_git\ai-rag-knowledge)
+25-07-14.22:07:26.760 [main            ] INFO  Application            - The following 1 profile is active: "prod"
+25-07-14.22:07:27.777 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-07-14.22:07:27.780 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-07-14.22:07:27.811 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+25-07-14.22:07:28.614 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port 8090 (http)
+25-07-14.22:07:28.634 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+25-07-14.22:07:28.636 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-07-14.22:07:28.637 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/10.1.19]
+25-07-14.22:07:28.770 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-07-14.22:07:28.770 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1753 ms
+25-07-14.22:07:29.242 [main            ] INFO  HikariDataSource       - HikariCP - Starting...
+25-07-14.22:07:29.482 [main            ] INFO  HikariPool             - HikariCP - Added connection org.postgresql.jdbc.PgConnection@288c3adc
+25-07-14.22:07:29.484 [main            ] INFO  HikariDataSource       - HikariCP - Start completed.
+25-07-14.22:07:34.281 [main            ] INFO  Version                - Redisson 3.44.0
+25-07-14.22:07:57.676 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redissonClient' defined in class path resource [com/luojiawei/tech/config/RedisClientConfig.class]: Failed to instantiate [org.redisson.api.RedissonClient]: Factory method 'redissonClient' threw exception with message: java.util.concurrent.ExecutionException: org.redisson.client.RedisConnectionException: Unable to connect to Redis server: 81.71.3.20/81.71.3.20:16379
+25-07-14.22:07:57.676 [main            ] INFO  HikariDataSource       - HikariCP - Shutdown initiated...
+25-07-14.22:07:57.680 [main            ] INFO  HikariDataSource       - HikariCP - Shutdown completed.
+25-07-14.22:07:57.682 [main            ] INFO  StandardService        - Stopping service [Tomcat]
+25-07-14.22:07:57.693 [main            ] INFO  ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+25-07-14.22:07:57.710 [main            ] ERROR SpringApplication      - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redissonClient' defined in class path resource [com/luojiawei/tech/config/RedisClientConfig.class]: Failed to instantiate [org.redisson.api.RedissonClient]: Factory method 'redissonClient' threw exception with message: java.util.concurrent.ExecutionException: org.redisson.client.RedisConnectionException: Unable to connect to Redis server: 81.71.3.20/81.71.3.20:16379
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:651)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:639)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1335)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1165)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:959)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at com.luojiawei.tech.Application.main(Application.java:12)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.redisson.api.RedissonClient]: Factory method 'redissonClient' threw exception with message: java.util.concurrent.ExecutionException: org.redisson.client.RedisConnectionException: Unable to connect to Redis server: 81.71.3.20/81.71.3.20:16379
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:177)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:647)
+	... 19 common frames omitted
+Caused by: org.redisson.client.RedisConnectionException: java.util.concurrent.ExecutionException: org.redisson.client.RedisConnectionException: Unable to connect to Redis server: 81.71.3.20/81.71.3.20:16379
+	at org.redisson.connection.MasterSlaveConnectionManager.doConnect(MasterSlaveConnectionManager.java:227)
+	at org.redisson.connection.MasterSlaveConnectionManager.connect(MasterSlaveConnectionManager.java:187)
+	at org.redisson.connection.ConnectionManager.create(ConnectionManager.java:98)
+	at org.redisson.Redisson.<init>(Redisson.java:67)
+	at org.redisson.Redisson.create(Redisson.java:110)
+	at com.luojiawei.tech.config.RedisClientConfig.redissonClient(RedisClientConfig.java:39)
+	at com.luojiawei.tech.config.RedisClientConfig$$SpringCGLIB$$0.CGLIB$redissonClient$0(<generated>)
+	at com.luojiawei.tech.config.RedisClientConfig$$SpringCGLIB$$FastClass$$1.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:258)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at com.luojiawei.tech.config.RedisClientConfig$$SpringCGLIB$$0.redissonClient(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:140)
+	... 20 common frames omitted
+Caused by: java.util.concurrent.ExecutionException: org.redisson.client.RedisConnectionException: Unable to connect to Redis server: 81.71.3.20/81.71.3.20:16379
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.redisson.connection.MasterSlaveConnectionManager.doConnect(MasterSlaveConnectionManager.java:222)
+	... 35 common frames omitted
+Caused by: org.redisson.client.RedisConnectionException: Unable to connect to Redis server: 81.71.3.20/81.71.3.20:16379
+	at org.redisson.connection.ConnectionsHolder.lambda$createConnection$2(ConnectionsHolder.java:167)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934)
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2162)
+	at org.redisson.connection.ConnectionsHolder.lambda$createConnection$5(ConnectionsHolder.java:181)
+	at java.base/java.util.concurrent.CompletableFuture.uniWhenComplete(CompletableFuture.java:863)
+	at java.base/java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:841)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2162)
+	at org.redisson.client.RedisClient$2$2.run(RedisClient.java:325)
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:173)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:166)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:470)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:569)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.util.concurrent.CompletionException: io.netty.channel.ConnectTimeoutException: connection timed out after 5000 ms: 81.71.3.20/81.71.3.20:16379
+	at java.base/java.util.concurrent.CompletableFuture.encodeRelay(CompletableFuture.java:368)
+	at java.base/java.util.concurrent.CompletableFuture.completeRelay(CompletableFuture.java:377)
+	at java.base/java.util.concurrent.CompletableFuture$UniRelay.tryFire(CompletableFuture.java:1097)
+	... 11 common frames omitted
+Caused by: io.netty.channel.ConnectTimeoutException: connection timed out after 5000 ms: 81.71.3.20/81.71.3.20:16379
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe$1.run(AbstractNioChannel.java:261)
+	at io.netty.util.concurrent.PromiseTask.runTask(PromiseTask.java:98)
+	at io.netty.util.concurrent.ScheduledFutureTask.run(ScheduledFutureTask.java:153)
+	... 8 common frames omitted
+25-07-14.22:08:05.195 [main            ] INFO  Application            - Starting Application using Java 17.0.11 with PID 12888 (A:\Desktop\repos_git\ai-rag-knowledge\luo-dev-tech-app\target\classes started by 22407 in A:\Desktop\repos_git\ai-rag-knowledge)
+25-07-14.22:08:05.197 [main            ] INFO  Application            - The following 1 profile is active: "prod"
+25-07-14.22:08:05.993 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-07-14.22:08:05.996 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-07-14.22:08:06.021 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+25-07-14.22:08:06.645 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port 8090 (http)
+25-07-14.22:08:06.660 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+25-07-14.22:08:06.665 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-07-14.22:08:06.665 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/10.1.19]
+25-07-14.22:08:06.776 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-07-14.22:08:06.777 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1357 ms
+25-07-14.22:08:07.216 [main            ] INFO  HikariDataSource       - HikariCP - Starting...
+25-07-14.22:08:07.401 [main            ] INFO  HikariPool             - HikariCP - Added connection org.postgresql.jdbc.PgConnection@7a412a6f
+25-07-14.22:08:07.402 [main            ] INFO  HikariDataSource       - HikariCP - Start completed.
+25-07-14.22:08:08.173 [main            ] INFO  Version                - Redisson 3.44.0
+25-07-14.22:08:31.490 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redissonClient' defined in class path resource [com/luojiawei/tech/config/RedisClientConfig.class]: Failed to instantiate [org.redisson.api.RedissonClient]: Factory method 'redissonClient' threw exception with message: java.util.concurrent.ExecutionException: org.redisson.client.RedisConnectionException: Unable to connect to Redis server: 81.71.3.20/81.71.3.20:16379
+25-07-14.22:08:31.490 [main            ] INFO  HikariDataSource       - HikariCP - Shutdown initiated...
+25-07-14.22:08:31.492 [main            ] INFO  HikariDataSource       - HikariCP - Shutdown completed.
+25-07-14.22:08:31.494 [main            ] INFO  StandardService        - Stopping service [Tomcat]
+25-07-14.22:08:31.503 [main            ] INFO  ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+25-07-14.22:08:31.518 [main            ] ERROR SpringApplication      - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redissonClient' defined in class path resource [com/luojiawei/tech/config/RedisClientConfig.class]: Failed to instantiate [org.redisson.api.RedissonClient]: Factory method 'redissonClient' threw exception with message: java.util.concurrent.ExecutionException: org.redisson.client.RedisConnectionException: Unable to connect to Redis server: 81.71.3.20/81.71.3.20:16379
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:651)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:639)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1335)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1165)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:959)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at com.luojiawei.tech.Application.main(Application.java:12)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.redisson.api.RedissonClient]: Factory method 'redissonClient' threw exception with message: java.util.concurrent.ExecutionException: org.redisson.client.RedisConnectionException: Unable to connect to Redis server: 81.71.3.20/81.71.3.20:16379
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:177)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:647)
+	... 19 common frames omitted
+Caused by: org.redisson.client.RedisConnectionException: java.util.concurrent.ExecutionException: org.redisson.client.RedisConnectionException: Unable to connect to Redis server: 81.71.3.20/81.71.3.20:16379
+	at org.redisson.connection.MasterSlaveConnectionManager.doConnect(MasterSlaveConnectionManager.java:227)
+	at org.redisson.connection.MasterSlaveConnectionManager.connect(MasterSlaveConnectionManager.java:187)
+	at org.redisson.connection.ConnectionManager.create(ConnectionManager.java:98)
+	at org.redisson.Redisson.<init>(Redisson.java:67)
+	at org.redisson.Redisson.create(Redisson.java:110)
+	at com.luojiawei.tech.config.RedisClientConfig.redissonClient(RedisClientConfig.java:39)
+	at com.luojiawei.tech.config.RedisClientConfig$$SpringCGLIB$$0.CGLIB$redissonClient$0(<generated>)
+	at com.luojiawei.tech.config.RedisClientConfig$$SpringCGLIB$$FastClass$$1.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:258)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at com.luojiawei.tech.config.RedisClientConfig$$SpringCGLIB$$0.redissonClient(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:140)
+	... 20 common frames omitted
+Caused by: java.util.concurrent.ExecutionException: org.redisson.client.RedisConnectionException: Unable to connect to Redis server: 81.71.3.20/81.71.3.20:16379
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.redisson.connection.MasterSlaveConnectionManager.doConnect(MasterSlaveConnectionManager.java:222)
+	... 35 common frames omitted
+Caused by: org.redisson.client.RedisConnectionException: Unable to connect to Redis server: 81.71.3.20/81.71.3.20:16379
+	at org.redisson.connection.ConnectionsHolder.lambda$createConnection$2(ConnectionsHolder.java:167)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934)
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2162)
+	at org.redisson.connection.ConnectionsHolder.lambda$createConnection$5(ConnectionsHolder.java:181)
+	at java.base/java.util.concurrent.CompletableFuture.uniWhenComplete(CompletableFuture.java:863)
+	at java.base/java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:841)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2162)
+	at org.redisson.client.RedisClient$2$2.run(RedisClient.java:325)
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:173)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:166)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:470)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:569)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.util.concurrent.CompletionException: io.netty.channel.ConnectTimeoutException: connection timed out after 5000 ms: 81.71.3.20/81.71.3.20:16379
+	at java.base/java.util.concurrent.CompletableFuture.encodeRelay(CompletableFuture.java:368)
+	at java.base/java.util.concurrent.CompletableFuture.completeRelay(CompletableFuture.java:377)
+	at java.base/java.util.concurrent.CompletableFuture$UniRelay.tryFire(CompletableFuture.java:1097)
+	... 11 common frames omitted
+Caused by: io.netty.channel.ConnectTimeoutException: connection timed out after 5000 ms: 81.71.3.20/81.71.3.20:16379
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe$1.run(AbstractNioChannel.java:261)
+	at io.netty.util.concurrent.PromiseTask.runTask(PromiseTask.java:98)
+	at io.netty.util.concurrent.ScheduledFutureTask.run(ScheduledFutureTask.java:153)
+	... 8 common frames omitted
+25-07-14.22:10:11.223 [main            ] INFO  Application            - Starting Application using Java 17.0.11 with PID 36516 (A:\Desktop\repos_git\ai-rag-knowledge\luo-dev-tech-app\target\classes started by 22407 in A:\Desktop\repos_git\ai-rag-knowledge)
+25-07-14.22:10:11.225 [main            ] INFO  Application            - The following 1 profile is active: "prod"
+25-07-14.22:10:12.155 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-07-14.22:10:12.158 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-07-14.22:10:12.187 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+25-07-14.22:10:12.931 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port 8090 (http)
+25-07-14.22:10:12.939 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+25-07-14.22:10:12.940 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-07-14.22:10:12.940 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/10.1.19]
+25-07-14.22:10:13.062 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-07-14.22:10:13.063 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1565 ms
+25-07-14.22:10:13.572 [main            ] INFO  HikariDataSource       - HikariCP - Starting...
+25-07-14.22:10:13.802 [main            ] INFO  HikariPool             - HikariCP - Added connection org.postgresql.jdbc.PgConnection@15143e71
+25-07-14.22:10:13.805 [main            ] INFO  HikariDataSource       - HikariCP - Start completed.
+25-07-14.22:10:14.572 [main            ] INFO  Version                - Redisson 3.44.0
+25-07-14.22:10:14.905 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 81.71.3.20/81.71.3.20:16379
+25-07-14.22:10:15.004 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 81.71.3.20/81.71.3.20:16379
+25-07-14.22:10:15.663 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8090"]
+25-07-14.22:10:15.681 [main            ] INFO  TomcatWebServer        - Tomcat started on port 8090 (http) with context path ''
+25-07-14.22:10:15.698 [main            ] INFO  Application            - Started Application in 5.168 seconds (process running for 6.421)
+25-07-14.22:12:20.108 [http-nio-8090-exec-1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+25-07-14.22:12:20.109 [http-nio-8090-exec-1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+25-07-14.22:12:20.112 [http-nio-8090-exec-1] INFO  DispatcherServlet      - Completed initialization in 3 ms
+25-07-14.22:15:33.415 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariCP - Shutdown initiated...
+25-07-14.22:15:33.418 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariCP - Shutdown completed.
+25-07-14.22:16:20.691 [main            ] INFO  Application            - Starting Application using Java 17.0.11 with PID 39164 (A:\Desktop\repos_git\ai-rag-knowledge\luo-dev-tech-app\target\classes started by 22407 in A:\Desktop\repos_git\ai-rag-knowledge)
+25-07-14.22:16:20.694 [main            ] INFO  Application            - The following 1 profile is active: "prod"
+25-07-14.22:16:21.783 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-07-14.22:16:21.788 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-07-14.22:16:21.817 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+25-07-14.22:16:22.640 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port 8090 (http)
+25-07-14.22:16:22.669 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+25-07-14.22:16:22.677 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-07-14.22:16:22.677 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/10.1.19]
+25-07-14.22:16:22.838 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-07-14.22:16:22.839 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1885 ms
+25-07-14.22:16:23.251 [main            ] INFO  Application            - Starting Application using Java 17.0.11 with PID 39224 (A:\Desktop\repos_git\ai-rag-knowledge\luo-dev-tech-app\target\classes started by 22407 in A:\Desktop\repos_git\ai-rag-knowledge)
+25-07-14.22:16:23.254 [main            ] INFO  Application            - The following 1 profile is active: "prod"
+25-07-14.22:16:23.573 [main            ] INFO  HikariDataSource       - HikariCP - Starting...
+25-07-14.22:16:23.813 [main            ] INFO  HikariPool             - HikariCP - Added connection org.postgresql.jdbc.PgConnection@60bfed0e
+25-07-14.22:16:23.815 [main            ] INFO  HikariDataSource       - HikariCP - Start completed.
+25-07-14.22:16:24.150 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-07-14.22:16:24.152 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-07-14.22:16:24.179 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+25-07-14.22:16:24.928 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port 8090 (http)
+25-07-14.22:16:24.940 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+25-07-14.22:16:24.941 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-07-14.22:16:24.942 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/10.1.19]
+25-07-14.22:16:25.053 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-07-14.22:16:25.054 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1506 ms
+25-07-14.22:16:25.559 [main            ] INFO  HikariDataSource       - HikariCP - Starting...
+25-07-14.22:16:25.678 [main            ] INFO  Version                - Redisson 3.44.0
+25-07-14.22:16:25.783 [main            ] INFO  HikariPool             - HikariCP - Added connection org.postgresql.jdbc.PgConnection@c00e9e7
+25-07-14.22:16:25.785 [main            ] INFO  HikariDataSource       - HikariCP - Start completed.
+25-07-14.22:16:26.039 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 81.71.3.20/81.71.3.20:16379
+25-07-14.22:16:26.134 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 81.71.3.20/81.71.3.20:16379
+25-07-14.22:16:26.629 [main            ] INFO  Version                - Redisson 3.44.0
+25-07-14.22:16:26.793 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8090"]
+25-07-14.22:16:26.803 [main            ] INFO  TomcatWebServer        - Tomcat started on port 8090 (http) with context path ''
+25-07-14.22:16:26.812 [main            ] INFO  Application            - Started Application in 6.766 seconds (process running for 7.722)
+25-07-14.22:16:26.939 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 81.71.3.20/81.71.3.20:16379
+25-07-14.22:16:27.029 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 81.71.3.20/81.71.3.20:16379
+25-07-14.22:16:27.704 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8090"]
+25-07-14.22:16:27.708 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+25-07-14.22:16:27.720 [main            ] INFO  HikariDataSource       - HikariCP - Shutdown initiated...
+25-07-14.22:16:27.722 [main            ] INFO  HikariDataSource       - HikariCP - Shutdown completed.
+25-07-14.22:16:27.736 [main            ] INFO  ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+25-07-14.22:16:27.754 [main            ] ERROR LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8090 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8090 or configure this application to listen on another port.
+
+25-07-14.22:17:15.752 [http-nio-8090-exec-1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+25-07-14.22:17:15.752 [http-nio-8090-exec-1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+25-07-14.22:17:15.753 [http-nio-8090-exec-1] INFO  DispatcherServlet      - Completed initialization in 1 ms
+25-07-14.22:17:53.473 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariCP - Shutdown initiated...
+25-07-14.22:17:53.476 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariCP - Shutdown completed.
+25-07-14.22:18:03.718 [main            ] INFO  Application            - Starting Application using Java 17.0.11 with PID 23848 (A:\Desktop\repos_git\ai-rag-knowledge\luo-dev-tech-app\target\classes started by 22407 in A:\Desktop\repos_git\ai-rag-knowledge)
+25-07-14.22:18:03.720 [main            ] INFO  Application            - The following 1 profile is active: "prod"
+25-07-14.22:18:04.539 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-07-14.22:18:04.543 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-07-14.22:18:04.571 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+25-07-14.22:18:05.387 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port 8090 (http)
+25-07-14.22:18:05.396 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+25-07-14.22:18:05.398 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-07-14.22:18:05.398 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/10.1.19]
+25-07-14.22:18:05.519 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-07-14.22:18:05.519 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1573 ms
+25-07-14.22:18:06.063 [main            ] INFO  HikariDataSource       - HikariCP - Starting...
+25-07-14.22:18:06.300 [main            ] INFO  HikariPool             - HikariCP - Added connection org.postgresql.jdbc.PgConnection@4e5b41c9
+25-07-14.22:18:06.302 [main            ] INFO  HikariDataSource       - HikariCP - Start completed.
+25-07-14.22:18:07.412 [main            ] INFO  Version                - Redisson 3.44.0
+25-07-14.22:18:07.848 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 81.71.3.20/81.71.3.20:16379
+25-07-14.22:18:08.049 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 81.71.3.20/81.71.3.20:16379
+25-07-14.22:18:08.743 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8090"]
+25-07-14.22:18:08.752 [main            ] INFO  TomcatWebServer        - Tomcat started on port 8090 (http) with context path ''
+25-07-14.22:18:08.761 [main            ] INFO  Application            - Started Application in 5.657 seconds (process running for 6.976)
+25-07-14.22:18:14.149 [http-nio-8090-exec-1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+25-07-14.22:18:14.149 [http-nio-8090-exec-1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+25-07-14.22:18:14.150 [http-nio-8090-exec-1] INFO  DispatcherServlet      - Completed initialization in 1 ms
+25-07-14.22:19:35.233 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariCP - Shutdown initiated...
+25-07-14.22:19:35.236 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariCP - Shutdown completed.
+25-07-14.22:19:38.460 [main            ] INFO  Application            - Starting Application using Java 17.0.11 with PID 31136 (A:\Desktop\repos_git\ai-rag-knowledge\luo-dev-tech-app\target\classes started by 22407 in A:\Desktop\repos_git\ai-rag-knowledge)
+25-07-14.22:19:38.462 [main            ] INFO  Application            - The following 1 profile is active: "prod"
+25-07-14.22:19:39.410 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-07-14.22:19:39.413 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-07-14.22:19:39.446 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+25-07-14.22:19:40.269 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port 8090 (http)
+25-07-14.22:19:40.278 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+25-07-14.22:19:40.280 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-07-14.22:19:40.280 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/10.1.19]
+25-07-14.22:19:40.407 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-07-14.22:19:40.408 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1677 ms
+25-07-14.22:19:40.969 [main            ] INFO  HikariDataSource       - HikariCP - Starting...
+25-07-14.22:19:41.194 [main            ] INFO  HikariPool             - HikariCP - Added connection org.postgresql.jdbc.PgConnection@5b5df2b2
+25-07-14.22:19:41.196 [main            ] INFO  HikariDataSource       - HikariCP - Start completed.
+25-07-14.22:19:41.969 [main            ] INFO  Version                - Redisson 3.44.0
+25-07-14.22:19:42.268 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 81.71.3.20/81.71.3.20:16379
+25-07-14.22:19:42.352 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 81.71.3.20/81.71.3.20:16379
+25-07-14.22:19:43.041 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8090"]
+25-07-14.22:19:43.052 [main            ] INFO  TomcatWebServer        - Tomcat started on port 8090 (http) with context path ''
+25-07-14.22:19:43.060 [main            ] INFO  Application            - Started Application in 5.291 seconds (process running for 6.577)
+25-07-14.22:20:37.969 [http-nio-8090-exec-1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+25-07-14.22:20:37.969 [http-nio-8090-exec-1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+25-07-14.22:20:37.970 [http-nio-8090-exec-1] INFO  DispatcherServlet      - Completed initialization in 1 ms
+25-07-14.22:21:00.566 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariCP - Shutdown initiated...
+25-07-14.22:21:00.570 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariCP - Shutdown completed.
+25-07-14.22:22:23.308 [main            ] INFO  Application            - Starting Application using Java 17.0.11 with PID 32044 (A:\Desktop\repos_git\ai-rag-knowledge\luo-dev-tech-app\target\classes started by 22407 in A:\Desktop\repos_git\ai-rag-knowledge)
+25-07-14.22:22:23.311 [main            ] INFO  Application            - The following 1 profile is active: "prod"
+25-07-14.22:22:24.186 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-07-14.22:22:24.189 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-07-14.22:22:24.217 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+25-07-14.22:22:25.023 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port 8090 (http)
+25-07-14.22:22:25.031 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+25-07-14.22:22:25.032 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-07-14.22:22:25.032 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/10.1.19]
+25-07-14.22:22:25.145 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-07-14.22:22:25.145 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1584 ms
+25-07-14.22:22:25.747 [main            ] INFO  HikariDataSource       - HikariCP - Starting...
+25-07-14.22:22:25.984 [main            ] INFO  HikariPool             - HikariCP - Added connection org.postgresql.jdbc.PgConnection@39778b56
+25-07-14.22:22:25.986 [main            ] INFO  HikariDataSource       - HikariCP - Start completed.
+25-07-14.22:22:26.759 [main            ] INFO  Version                - Redisson 3.44.0
+25-07-14.22:22:27.063 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 81.71.3.20/81.71.3.20:16379
+25-07-14.22:22:27.161 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 81.71.3.20/81.71.3.20:16379
+25-07-14.22:22:27.789 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8090"]
+25-07-14.22:22:27.800 [main            ] INFO  TomcatWebServer        - Tomcat started on port 8090 (http) with context path ''
+25-07-14.22:22:27.809 [main            ] INFO  Application            - Started Application in 5.173 seconds (process running for 6.438)
+25-07-14.22:22:35.391 [http-nio-8090-exec-1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+25-07-14.22:22:35.391 [http-nio-8090-exec-1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+25-07-14.22:22:35.392 [http-nio-8090-exec-1] INFO  DispatcherServlet      - Completed initialization in 1 ms
+25-07-14.22:22:41.988 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariCP - Shutdown initiated...
+25-07-14.22:22:41.991 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariCP - Shutdown completed.
+25-07-14.22:22:45.600 [main            ] INFO  Application            - Starting Application using Java 17.0.11 with PID 35924 (A:\Desktop\repos_git\ai-rag-knowledge\luo-dev-tech-app\target\classes started by 22407 in A:\Desktop\repos_git\ai-rag-knowledge)
+25-07-14.22:22:45.602 [main            ] INFO  Application            - The following 1 profile is active: "prod"
+25-07-14.22:22:46.399 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-07-14.22:22:46.402 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-07-14.22:22:46.427 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+25-07-14.22:22:47.150 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port 8090 (http)
+25-07-14.22:22:47.278 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1437 ms
+25-07-14.22:22:47.738 [main            ] INFO  HikariDataSource       - HikariCP - Starting...
+25-07-14.22:22:47.945 [main            ] INFO  HikariPool             - HikariCP - Added connection org.postgresql.jdbc.PgConnection@64b5c54d
+25-07-14.22:22:47.947 [main            ] INFO  HikariDataSource       - HikariCP - Start completed.
+25-07-14.22:22:48.717 [main            ] INFO  Version                - Redisson 3.44.0
+25-07-14.22:22:49.012 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 81.71.3.20/81.71.3.20:16379
+25-07-14.22:22:49.100 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 81.71.3.20/81.71.3.20:16379
+25-07-14.22:22:49.666 [main            ] INFO  TomcatWebServer        - Tomcat started on port 8090 (http) with context path ''
+25-07-14.22:22:49.673 [main            ] INFO  Application            - Started Application in 4.724 seconds (process running for 5.674)
+25-07-14.22:22:49.707 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariCP - Shutdown initiated...
+25-07-14.22:22:49.710 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariCP - Shutdown completed.
+25-07-14.22:22:52.549 [main            ] INFO  Application            - Starting Application using Java 17.0.11 with PID 33628 (A:\Desktop\repos_git\ai-rag-knowledge\luo-dev-tech-app\target\classes started by 22407 in A:\Desktop\repos_git\ai-rag-knowledge)
+25-07-14.22:22:52.551 [main            ] INFO  Application            - The following 1 profile is active: "prod"
+25-07-14.22:22:53.387 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-07-14.22:22:53.390 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-07-14.22:22:53.420 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+25-07-14.22:22:54.184 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port 8090 (http)
+25-07-14.22:22:54.195 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+25-07-14.22:22:54.197 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-07-14.22:22:54.197 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/10.1.19]
+25-07-14.22:22:54.327 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-07-14.22:22:54.328 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1568 ms
+25-07-14.22:22:54.790 [main            ] INFO  HikariDataSource       - HikariCP - Starting...
+25-07-14.22:22:55.028 [main            ] INFO  HikariPool             - HikariCP - Added connection org.postgresql.jdbc.PgConnection@7a080f4f
+25-07-14.22:22:55.030 [main            ] INFO  HikariDataSource       - HikariCP - Start completed.
+25-07-14.22:22:55.760 [main            ] INFO  Version                - Redisson 3.44.0
+25-07-14.22:22:56.070 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 81.71.3.20/81.71.3.20:16379
+25-07-14.22:22:56.167 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 81.71.3.20/81.71.3.20:16379
+25-07-14.22:22:56.797 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8090"]
+25-07-14.22:22:56.807 [main            ] INFO  TomcatWebServer        - Tomcat started on port 8090 (http) with context path ''
+25-07-14.22:22:56.815 [main            ] INFO  Application            - Started Application in 4.9 seconds (process running for 6.109)
+25-07-14.22:22:59.222 [http-nio-8090-exec-1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+25-07-14.22:22:59.223 [http-nio-8090-exec-1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+25-07-14.22:22:59.224 [http-nio-8090-exec-1] INFO  DispatcherServlet      - Completed initialization in 1 ms
+25-07-14.22:23:47.828 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariCP - Shutdown initiated...
+25-07-14.22:23:47.830 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariCP - Shutdown completed.
+25-07-14.22:23:51.240 [main            ] INFO  Application            - Starting Application using Java 17.0.11 with PID 37600 (A:\Desktop\repos_git\ai-rag-knowledge\luo-dev-tech-app\target\classes started by 22407 in A:\Desktop\repos_git\ai-rag-knowledge)
+25-07-14.22:23:51.243 [main            ] INFO  Application            - The following 1 profile is active: "prod"
+25-07-14.22:23:52.111 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-07-14.22:23:52.113 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-07-14.22:23:52.141 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+25-07-14.22:23:52.922 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port 8090 (http)
+25-07-14.22:23:52.930 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+25-07-14.22:23:52.932 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-07-14.22:23:52.932 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/10.1.19]
+25-07-14.22:23:53.048 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-07-14.22:23:53.048 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1563 ms
+25-07-14.22:23:53.546 [main            ] INFO  HikariDataSource       - HikariCP - Starting...
+25-07-14.22:23:53.791 [main            ] INFO  HikariPool             - HikariCP - Added connection org.postgresql.jdbc.PgConnection@45e5815d
+25-07-14.22:23:53.793 [main            ] INFO  HikariDataSource       - HikariCP - Start completed.
+25-07-14.22:23:54.706 [main            ] INFO  Version                - Redisson 3.44.0
+25-07-14.22:23:55.002 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 81.71.3.20/81.71.3.20:16379
+25-07-14.22:23:55.097 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 81.71.3.20/81.71.3.20:16379
+25-07-14.22:23:55.764 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8090"]
+25-07-14.22:23:55.774 [main            ] INFO  TomcatWebServer        - Tomcat started on port 8090 (http) with context path ''
+25-07-14.22:23:55.783 [main            ] INFO  Application            - Started Application in 5.194 seconds (process running for 6.462)
+25-07-14.22:24:05.892 [http-nio-8090-exec-1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+25-07-14.22:24:05.892 [http-nio-8090-exec-1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+25-07-14.22:24:05.894 [http-nio-8090-exec-1] INFO  DispatcherServlet      - Completed initialization in 0 ms
+25-07-14.22:24:26.261 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariCP - Shutdown initiated...
+25-07-14.22:24:26.265 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariCP - Shutdown completed.
+25-07-14.22:24:30.929 [main            ] INFO  Application            - Starting Application using Java 17.0.11 with PID 37468 (A:\Desktop\repos_git\ai-rag-knowledge\luo-dev-tech-app\target\classes started by 22407 in A:\Desktop\repos_git\ai-rag-knowledge)
+25-07-14.22:24:30.930 [main            ] INFO  Application            - The following 1 profile is active: "prod"
+25-07-14.22:24:31.756 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-07-14.22:24:31.759 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-07-14.22:24:31.792 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+25-07-14.22:24:32.427 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port 8090 (http)
+25-07-14.22:24:32.558 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1419 ms
+25-07-14.22:24:33.062 [main            ] INFO  HikariDataSource       - HikariCP - Starting...
+25-07-14.22:24:33.290 [main            ] INFO  HikariPool             - HikariCP - Added connection org.postgresql.jdbc.PgConnection@1684f3ac
+25-07-14.22:24:33.292 [main            ] INFO  HikariDataSource       - HikariCP - Start completed.
+25-07-14.22:24:36.888 [main            ] INFO  Application            - Starting Application using Java 17.0.11 with PID 38876 (A:\Desktop\repos_git\ai-rag-knowledge\luo-dev-tech-app\target\classes started by 22407 in A:\Desktop\repos_git\ai-rag-knowledge)
+25-07-14.22:24:36.890 [main            ] INFO  Application            - The following 1 profile is active: "prod"
+25-07-14.22:24:37.745 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-07-14.22:24:37.748 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-07-14.22:24:37.776 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+25-07-14.22:24:38.579 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port 8090 (http)
+25-07-14.22:24:38.588 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+25-07-14.22:24:38.590 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-07-14.22:24:38.590 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/10.1.19]
+25-07-14.22:24:38.704 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-07-14.22:24:38.704 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1577 ms
+25-07-14.22:24:39.206 [main            ] INFO  HikariDataSource       - HikariCP - Starting...
+25-07-14.22:24:39.403 [main            ] INFO  HikariPool             - HikariCP - Added connection org.postgresql.jdbc.PgConnection@191f7bf9
+25-07-14.22:24:39.405 [main            ] INFO  HikariDataSource       - HikariCP - Start completed.
+25-07-14.22:24:40.202 [main            ] INFO  Version                - Redisson 3.44.0
+25-07-14.22:24:40.536 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 81.71.3.20/81.71.3.20:16379
+25-07-14.22:24:40.616 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 81.71.3.20/81.71.3.20:16379
+25-07-14.22:24:41.267 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8090"]
+25-07-14.22:24:41.280 [main            ] INFO  TomcatWebServer        - Tomcat started on port 8090 (http) with context path ''
+25-07-14.22:24:41.289 [main            ] INFO  Application            - Started Application in 5.062 seconds (process running for 6.241)
+25-07-14.22:25:07.959 [http-nio-8090-exec-1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+25-07-14.22:25:07.960 [http-nio-8090-exec-1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+25-07-14.22:25:07.961 [http-nio-8090-exec-1] INFO  DispatcherServlet      - Completed initialization in 1 ms
+25-07-14.22:26:33.143 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariCP - Shutdown initiated...
+25-07-14.22:26:33.145 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariCP - Shutdown completed.
+25-07-14.22:26:42.138 [main            ] INFO  Application            - Starting Application using Java 17.0.11 with PID 31804 (A:\Desktop\repos_git\ai-rag-knowledge\luo-dev-tech-app\target\classes started by 22407 in A:\Desktop\repos_git\ai-rag-knowledge)
+25-07-14.22:26:42.141 [main            ] INFO  Application            - The following 1 profile is active: "prod"
+25-07-14.22:26:42.932 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-07-14.22:26:42.935 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-07-14.22:26:42.960 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+25-07-14.22:26:43.724 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port 8090 (http)
+25-07-14.22:26:43.732 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+25-07-14.22:26:43.734 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-07-14.22:26:43.734 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/10.1.19]
+25-07-14.22:26:43.858 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-07-14.22:26:43.858 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1520 ms
+25-07-14.22:26:44.326 [main            ] INFO  HikariDataSource       - HikariCP - Starting...
+25-07-14.22:26:44.542 [main            ] INFO  HikariPool             - HikariCP - Added connection org.postgresql.jdbc.PgConnection@29dbb8ba
+25-07-14.22:26:44.544 [main            ] INFO  HikariDataSource       - HikariCP - Start completed.
+25-07-14.22:26:45.718 [main            ] INFO  Version                - Redisson 3.44.0
+25-07-14.22:26:46.036 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 81.71.3.20/81.71.3.20:16379
+25-07-14.22:26:46.121 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 81.71.3.20/81.71.3.20:16379
+25-07-14.22:26:46.780 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8090"]
+25-07-14.22:26:46.794 [main            ] INFO  TomcatWebServer        - Tomcat started on port 8090 (http) with context path ''
+25-07-14.22:26:46.805 [main            ] INFO  Application            - Started Application in 5.319 seconds (process running for 6.533)
+25-07-14.22:26:56.852 [http-nio-8090-exec-1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+25-07-14.22:26:56.852 [http-nio-8090-exec-1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+25-07-14.22:26:56.853 [http-nio-8090-exec-1] INFO  DispatcherServlet      - Completed initialization in 1 ms
+25-07-14.22:27:00.157 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariCP - Shutdown initiated...
+25-07-14.22:27:00.160 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariCP - Shutdown completed.
+25-07-14.22:28:05.363 [main            ] INFO  Application            - Starting Application using Java 17.0.11 with PID 4392 (A:\Desktop\repos_git\ai-rag-knowledge\luo-dev-tech-app\target\classes started by 22407 in A:\Desktop\repos_git\ai-rag-knowledge)
+25-07-14.22:28:05.366 [main            ] INFO  Application            - The following 1 profile is active: "prod"
+25-07-14.22:28:06.320 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-07-14.22:28:06.323 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-07-14.22:28:06.364 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 23 ms. Found 0 Redis repository interfaces.
+25-07-14.22:28:07.126 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port 8090 (http)
+25-07-14.22:28:07.137 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+25-07-14.22:28:07.139 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-07-14.22:28:07.139 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/10.1.19]
+25-07-14.22:28:07.256 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-07-14.22:28:07.257 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1593 ms
+25-07-14.22:28:07.753 [main            ] INFO  HikariDataSource       - HikariCP - Starting...
+25-07-14.22:28:07.963 [main            ] INFO  HikariPool             - HikariCP - Added connection org.postgresql.jdbc.PgConnection@14b0c3d4
+25-07-14.22:28:07.964 [main            ] INFO  HikariDataSource       - HikariCP - Start completed.
+25-07-14.22:28:08.867 [main            ] INFO  Version                - Redisson 3.44.0
+25-07-14.22:28:09.205 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 81.71.3.20/81.71.3.20:16379
+25-07-14.22:28:09.299 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 81.71.3.20/81.71.3.20:16379
+25-07-14.22:28:10.004 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8090"]
+25-07-14.22:28:10.014 [main            ] INFO  TomcatWebServer        - Tomcat started on port 8090 (http) with context path ''
+25-07-14.22:28:10.024 [main            ] INFO  Application            - Started Application in 5.468 seconds (process running for 6.743)
+25-07-14.22:28:17.909 [http-nio-8090-exec-1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+25-07-14.22:28:17.910 [http-nio-8090-exec-1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+25-07-14.22:28:17.911 [http-nio-8090-exec-1] INFO  DispatcherServlet      - Completed initialization in 1 ms
+25-07-14.22:36:05.471 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariCP - Shutdown initiated...
+25-07-14.22:36:05.473 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariCP - Shutdown completed.
+25-07-14.22:36:13.870 [main            ] INFO  Application            - Starting Application using Java 17.0.11 with PID 33004 (A:\Desktop\repos_git\ai-rag-knowledge\luo-dev-tech-app\target\classes started by 22407 in A:\Desktop\repos_git\ai-rag-knowledge)
+25-07-14.22:36:13.878 [main            ] INFO  Application            - The following 1 profile is active: "prod"
+25-07-14.22:36:14.954 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-07-14.22:36:14.956 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-07-14.22:36:14.979 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+25-07-14.22:36:15.632 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port 8090 (http)
+25-07-14.22:36:15.641 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+25-07-14.22:36:15.643 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-07-14.22:36:15.643 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/10.1.19]
+25-07-14.22:36:15.757 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-07-14.22:36:15.757 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1654 ms
+25-07-14.22:36:16.289 [main            ] INFO  HikariDataSource       - HikariCP - Starting...
+25-07-14.22:36:16.464 [main            ] INFO  HikariPool             - HikariCP - Added connection org.postgresql.jdbc.PgConnection@30aae69a
+25-07-14.22:36:16.466 [main            ] INFO  HikariDataSource       - HikariCP - Start completed.
+25-07-14.22:36:18.201 [main            ] INFO  Version                - Redisson 3.44.0
+25-07-14.22:36:18.502 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 81.71.3.20/81.71.3.20:16379
+25-07-14.22:36:18.605 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 81.71.3.20/81.71.3.20:16379
+25-07-14.22:36:19.399 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-07-14.22:36:19.451 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8090"]
+25-07-14.22:36:19.462 [main            ] INFO  TomcatWebServer        - Tomcat started on port 8090 (http) with context path ''
+25-07-14.22:36:19.478 [main            ] INFO  Application            - Started Application in 6.178 seconds (process running for 7.439)
+25-07-14.22:36:19.699 [RMI TCP Connection(3)-10.1.2.135] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+25-07-14.22:36:19.700 [RMI TCP Connection(3)-10.1.2.135] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+25-07-14.22:36:19.702 [RMI TCP Connection(3)-10.1.2.135] INFO  DispatcherServlet      - Completed initialization in 1 ms
+25-07-14.22:39:21.639 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariCP - Shutdown initiated...
+25-07-14.22:39:21.641 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariCP - Shutdown completed.
+25-07-14.22:39:27.719 [main            ] INFO  Application            - Starting Application using Java 17.0.11 with PID 448 (A:\Desktop\repos_git\ai-rag-knowledge\luo-dev-tech-app\target\classes started by 22407 in A:\Desktop\repos_git\ai-rag-knowledge)
+25-07-14.22:39:27.721 [main            ] INFO  Application            - The following 1 profile is active: "prod"
+25-07-14.22:39:28.773 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-07-14.22:39:28.776 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-07-14.22:39:28.801 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+25-07-14.22:39:29.478 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port 8090 (http)
+25-07-14.22:39:29.486 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+25-07-14.22:39:29.487 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-07-14.22:39:29.488 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/10.1.19]
+25-07-14.22:39:29.595 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-07-14.22:39:29.595 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1646 ms
+25-07-14.22:39:30.133 [main            ] INFO  HikariDataSource       - HikariCP - Starting...
+25-07-14.22:39:30.317 [main            ] INFO  HikariPool             - HikariCP - Added connection org.postgresql.jdbc.PgConnection@bfde38a
+25-07-14.22:39:30.318 [main            ] INFO  HikariDataSource       - HikariCP - Start completed.
+25-07-14.22:39:30.992 [main            ] INFO  Version                - Redisson 3.44.0
+25-07-14.22:39:31.289 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 81.71.3.20/81.71.3.20:16379
+25-07-14.22:39:31.368 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 81.71.3.20/81.71.3.20:16379
+25-07-14.22:39:32.102 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-07-14.22:39:32.158 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8090"]
+25-07-14.22:39:32.169 [main            ] INFO  TomcatWebServer        - Tomcat started on port 8090 (http) with context path ''
+25-07-14.22:39:32.186 [main            ] INFO  Application            - Started Application in 5.118 seconds (process running for 6.142)
+25-07-14.22:39:32.528 [RMI TCP Connection(3)-10.1.2.135] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+25-07-14.22:39:32.528 [RMI TCP Connection(3)-10.1.2.135] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+25-07-14.22:39:32.529 [RMI TCP Connection(3)-10.1.2.135] INFO  DispatcherServlet      - Completed initialization in 1 ms
+25-07-14.22:43:24.376 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariCP - Shutdown initiated...
+25-07-14.22:43:24.379 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariCP - Shutdown completed.
+25-07-14.22:43:34.335 [main            ] INFO  Application            - Starting Application using Java 17.0.11 with PID 16576 (A:\Desktop\repos_git\ai-rag-knowledge\luo-dev-tech-app\target\classes started by 22407 in A:\Desktop\repos_git\ai-rag-knowledge)
+25-07-14.22:43:34.337 [main            ] INFO  Application            - The following 1 profile is active: "prod"
+25-07-14.22:43:35.384 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-07-14.22:43:35.386 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-07-14.22:43:35.411 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+25-07-14.22:43:36.158 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port 8090 (http)
+25-07-14.22:43:36.166 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+25-07-14.22:43:36.168 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-07-14.22:43:36.168 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/10.1.19]
+25-07-14.22:43:36.287 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-07-14.22:43:36.287 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1704 ms
+25-07-14.22:43:36.866 [main            ] INFO  HikariDataSource       - HikariCP - Starting...
+25-07-14.22:43:37.043 [main            ] INFO  HikariPool             - HikariCP - Added connection org.postgresql.jdbc.PgConnection@32baae8b
+25-07-14.22:43:37.045 [main            ] INFO  HikariDataSource       - HikariCP - Start completed.
+25-07-14.22:43:37.704 [main            ] INFO  Version                - Redisson 3.44.0
+25-07-14.22:43:37.998 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 81.71.3.20/81.71.3.20:16379
+25-07-14.22:43:38.078 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 81.71.3.20/81.71.3.20:16379
+25-07-14.22:43:38.813 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-07-14.22:43:38.872 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8090"]
+25-07-14.22:43:38.881 [main            ] INFO  TomcatWebServer        - Tomcat started on port 8090 (http) with context path ''
+25-07-14.22:43:38.897 [main            ] INFO  Application            - Started Application in 5.136 seconds (process running for 6.085)
+25-07-14.22:43:39.110 [RMI TCP Connection(1)-10.1.2.135] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+25-07-14.22:43:39.110 [RMI TCP Connection(1)-10.1.2.135] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+25-07-14.22:43:39.112 [RMI TCP Connection(1)-10.1.2.135] INFO  DispatcherServlet      - Completed initialization in 2 ms
