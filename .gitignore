@@ -36,3 +36,4 @@ build/
 
 ### Mac OS ###
 .DS_Store
+/luo-dev-tech-app/data/log/
